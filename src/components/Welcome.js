@@ -19,7 +19,7 @@ const Welcome = () => {
         <h1>Welcome!</h1>
         <h3>Sign in to view and manage your songs</h3>
       </div>
-      <div className="flex flex-col justify-center items-center border-2 border-black h-5/6 w-1/6">
+      <div className="flex flex-col justify-center items-center h-5/6 w-1/6">
         {signin ? <SignIn /> : <SignUp />}
 
         <div onClick={handleTogglePage}>
