@@ -1,9 +1,9 @@
 import React from "react";
 
-const Form = () => {
+const settings = () => {
   return (
     <form>
-      <div class="space-y-12">
+      <div class="space-y-12 m-4">
         <div class="border-b border-gray-900/10 pb-12">
           <h2 class="text-base font-semibold leading-7 text-gray-900">
             Profile
@@ -237,7 +237,7 @@ const Form = () => {
 
       </div>
 
-      <div class="mt-6 flex items-center justify-end gap-x-6">
+      <div class="mt-6 flex items-center justify-end gap-x-6 p-4">
         <button
           type="button"
           class="text-sm font-semibold leading-6 text-gray-900"
@@ -255,4 +255,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default settings;
