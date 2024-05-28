@@ -15,12 +15,25 @@ module.exports = {
       },
       
       colors: {
-        'primary': 'FFEDDF'
+        'primary': '#050505',
+        'secondary': '#E9D3C0',
+        'teritary': '#FFFFFF',
+        'fourth': '#544234'
       },
 
       fontFamily: {
-        'error': ['Raleway']
+        'button': ['Raleway'],
+        'Inter': ['Inter'],
+        'Nunito': ['Nunito']
+      },
+      gridTemplateColumns: {
+        'mainLayoutCol': '20% 1fr'
+      },
+      gridTemplateRows: {
+        'mainLayoutRow': '8%, 1fr, 10%'
+        
       }
+      
     },
   },
   plugins: [
