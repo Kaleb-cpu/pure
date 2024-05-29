@@ -27,12 +27,14 @@ module.exports = {
         'Nunito': ['Nunito']
       },
       gridTemplateColumns: {
-        'mainLayoutCol': '20% 1fr'
+        'mainLayoutCol': '20%, 1fr',
+        'responsiveLayout': '15%, 1fr'
       },
       gridTemplateRows: {
-        'mainLayoutRow': '8%, 1fr, 10%'
+        'mainLayoutRow': '8%, 1fr, 5%',
+        'sideBarLayoutRow': '1%, 1fr, 50%',
         
-      }
+      },
       
     },
   },

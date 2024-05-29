@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
 
 export default function Footer() {
   return (
-    <div className='text-teritary'>This is the Footer</div>
-  )
+    <footer class="bg-secondary text-center lg:text-left h-full">
+      <div class="text-primary font-semibold p-4 text-center text-sm">
+        © 2023 Copyright:
+        <a href="https://tw-elements.com/"> Pure Worship</a>
+      </div>
+    </footer>
+  );
 }

@@ -22,7 +22,7 @@ function SignUpForm() {
       });
 
       if (response.ok){
-        window.location.href = '/user/dashboard';
+        window.location.href = '/home';
       }
       else {
         console.log("Form submission failed")
@@ -204,7 +204,7 @@ function SignUpForm() {
           </div>
 
           <div>
-          <SubmitButton type="submit">Sign in</SubmitButton>
+          <SubmitButton type="submit">Sign up</SubmitButton>
           </div>
         </form>
       </div>
