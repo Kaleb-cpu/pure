@@ -1,6 +1,6 @@
 "use client";
 import React, { Component } from "react";
-import H1 from "@/components/H1";
+import H1 from "@/components/Text/H1";
 import LibrarySongCard from "@/components/Cards/LibrarySongCard";
 import LibraryAlbumCard from "@/components/Cards/LibraryAlbumCard";
 

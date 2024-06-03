@@ -4,6 +4,7 @@ import Link from "next/link";
 import Button from "@/components/Button/Button";
 import SubmitButton from "@/components/Button/SubmitButton";
 import Image from "next/image";
+import UserIcon from "./UserIcon";
 function SideBar() {
   let [isOpen, setisOpen] = useState();
 
@@ -45,20 +46,12 @@ function SideBar() {
         <div
           className={`${isOpen ? "block" : "hidden"} lg:block lg:static lg:w-full lg:bg-transparent lg:mt-0 bg-fourth mt-2 h-full absolute w-2/6`}
         >
-          <Link
-            className="flex flex-row justify-end mt-2 lg:justify-start"
-            href="/"
-          >
-            <Image
-              className="rounded-full h-12 object-cover"
-              src="/user.jpg"
-              width="50"
-              height="50"
-              alt="user image"
-            ></Image>
-            <p className="self-center px-2 font-Inter">Kaleb</p>
-          </Link>
+          <div className="flex justify-end lg:justify-start">
 
+          <UserIcon userName="Kaleb"/>
+          </div>
+
+          
           <div className="flex flex-col items-end lg:items-start lg:mt-10">
             {sideBarItems.map((data) => {
               return (

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 function ImageCard(props) {
   return (
-    <div className="w-[200px] md:w-[250px] lg:w-[300px] h-[150px] relative">
+    <div className="w-[200px] md:w-[250px] lg:w-[300px] h-[150px] relative -z-10">
       
             <Image
               className="object-cover"

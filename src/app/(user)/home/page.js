@@ -1,5 +1,5 @@
 "use client";
-import H1 from "@/components/H1";
+import H1 from "@/components/Text/H1";
 import Image from "next/image";
 import React from "react";
 import DashboardCard from "@/components/Cards/DashboardCard";
