@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import SubmitButton from './SubmitButton'
+import SubmitButton from './Button/SubmitButton'
 
 function SignUpForm() {
   // functions that handle the form using react-hook-form

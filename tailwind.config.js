@@ -24,7 +24,8 @@ module.exports = {
       fontFamily: {
         'button': ['Raleway'],
         'Inter': ['Inter'],
-        'Nunito': ['Nunito']
+        'Nunito': ['Nunito'],
+        'Geez': ["Noto Serif Ethiopic"]
       },
       gridTemplateColumns: {
         'mainLayoutCol': '20%, 1fr',

@@ -9,7 +9,7 @@ export default function Button({
   ...props
 }) {
   return (
-    <button class="relative group w-2/6 text-left mt-2 py-1.5 px-2.5 text-teritary">
+    <button class="relative group text-left mt-2 py-1.5 px-2.5 text-teritary">
       <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-teritary group-hover:w-full group-hover:transition-all"></span>
       {children}
     </button>
