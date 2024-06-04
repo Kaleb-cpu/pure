@@ -44,7 +44,7 @@ function SideBar() {
         </button>
 
         <div
-          className={`${isOpen ? "block" : "hidden"} lg:block lg:static lg:w-full lg:bg-transparent lg:mt-0 bg-fourth mt-2 h-full absolute w-2/6`}
+          className={`${isOpen ? "block" : "hidden"} lg:block lg:static lg:w-full lg:bg-transparent lg:mt-0 bg-fourth mt-2 h-full absolute w-3/6`}
         >
           <div className="flex justify-end lg:justify-start">
 

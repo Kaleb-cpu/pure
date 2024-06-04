@@ -1,6 +1,6 @@
 "use client";
 import H1 from "@/components/Text/H1";
-import Image from "next/image";
+import H2 from "@/components/Text/H2";
 import React from "react";
 import DashboardCard from "@/components/Cards/DashboardCard";
 
@@ -37,15 +37,14 @@ function Home() {
   ];
 
   return (
-    <div className="h-full">
+    <div className="h-full mx-auto">
       {/* Dashboard heading */}
-      <div>
+      
+      <div className="mx-auto w-3/4 overflow-auto h-5/6">
+      <div className="mb-6 flex flex-col gap-10">
         <H1>Dashboard</H1>
-        <h3 className="text-teritary font-Inter text-md md:text-lg lg:text-xl mt-3 mb-10 lg:pt-2 ml-4 md:ml-10">
-          Recently added
-        </h3>
+        <H2>Recently added</H2>
       </div>
-      <div className="ml-4 md:ml-10 w-3/4 overflow-auto h-5/6">
         {Dashboard.map((data) => {
           return (
             <DashboardCard

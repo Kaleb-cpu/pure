@@ -5,7 +5,7 @@ function LibraryAlbumCard(props) {
     <div className="w-3/6 mt-5">
         <div className="lg:ml-10 ml-3 w-[200px] md:w-[250px] lg:w-[300px]">
           <ImageCard imageSrc={props.imageSrc} />
-          <h3 className="text-teritary font-semibold font-Nunito text-lg md:text-xl pb-1">
+          <h3 className="text-teritary font-semibold font-Nunito text-lg md:text-xl">
             {props.artistName}
           </h3>
           <h4 className="text-teritary font-semibold font-Geez md:text-lg">
