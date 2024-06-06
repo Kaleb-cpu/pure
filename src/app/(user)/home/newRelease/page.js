@@ -1,5 +1,5 @@
 import React from "react";
-import SubmitButton from "@/components/Button/SubmitButton";
+import SubmitButton from "@/components/Buttons/SubmitButton";
 import H1 from "@/components/Text/H1";
 import H2 from "@/components/Text/H2";
 import Link from "next/link";

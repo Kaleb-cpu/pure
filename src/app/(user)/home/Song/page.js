@@ -1,5 +1,5 @@
 import React from 'react'
-import SongForm from '@/components/SongForm'
+import SongForm from '@/components/Forms/SongForm'
 function page() {
   return (
     <div>

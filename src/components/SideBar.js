@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import Link from "next/link";
-import Button from "@/components/Button/Button";
-import SubmitButton from "@/components/Button/SubmitButton";
+import Button from "@/components/Buttons/Button";
+import SubmitButton from "@/components/Buttons/SubmitButton";
 import Image from "next/image";
 import UserIcon from "./UserIcon";
 function SideBar() {

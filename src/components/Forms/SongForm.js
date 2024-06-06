@@ -2,7 +2,7 @@
 
 
 import { useState } from 'react';
-import H2 from './Text/H2';
+import H2 from '@/components/Text/H2';
 const genres = ["Pop", "Rock", "Jazz", "Classical", "Hip-hop", "Country", "Electronic", "Reggae", "Blues", "Metal"];
 
 function SongForm () {

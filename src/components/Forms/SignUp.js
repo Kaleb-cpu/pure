@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import SubmitButton from './Button/SubmitButton'
+import SubmitButton from '@/components/Buttons/SubmitButton'
 
 function SignUpForm() {
   // functions that handle the form using react-hook-form
@@ -33,7 +33,7 @@ function SignUpForm() {
   };
 
   return (
-    <div className="flex flex-col items-center w-5/6">
+    <div className="sm:flex flex-col items-center w-full sm:w-5/6 min-h-screen">
       <div class="flex flex-col justify-center items-center">
         {/* <Image src="/logo-black.png" alt="Pure logo" width="50" height="50" /> */}
         <h2 className="mt-2 text-2xl font-bold tracking-tight text-secondary">

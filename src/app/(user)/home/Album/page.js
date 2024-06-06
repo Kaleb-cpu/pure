@@ -1,5 +1,5 @@
 import React from 'react'
-import AlbumForm from '@/components/AlbumForm'
+import AlbumForm from '@/components/Forms/AlbumForm'
 
 function page() {
   return (

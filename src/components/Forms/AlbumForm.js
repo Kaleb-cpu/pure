@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import H2 from './Text/H2';
+import H2 from '../Text/H2';
 
 const genres = ["Pop", "Rock", "Jazz", "Classical", "Hip-hop", "Country", "Electronic", "Reggae", "Blues", "Metal"];
 const songNumbers = Array.from({ length: 20 }, (_, i) => i + 1);

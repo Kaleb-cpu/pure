@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-import SubmitButton from "./Button/SubmitButton";
+import SubmitButton from "@/components/Buttons/SubmitButton";
 
 function SignInForm() {
   const { register, handleSubmit } = useForm();
 
   return (
-    <div className="flex flex-col items-center 5/6">
-      <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center w-screen sm:w-full">
+      <div className="flex flex-col justify-center items-center mx-auto">
         <Image src="/logo.png" alt="Pure logo" width="50" height="50" />
         <h2 className="mt-2 text-2xl font-bold tracking-tight text-secondary">
           Sign in to your account
         </h2>
       </div>
 
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm text-secondary">
+      <div className="mt-10 mx-auto sm:w-full sm:max-w-sm text-secondary">
         <form
           onSubmit={handleSubmit((data) => console.log(data))}
           class="space-y-6"

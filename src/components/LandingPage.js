@@ -1,8 +1,8 @@
 "use client"; // This is a client component 👈🏽
 
 import { React, useState } from "react";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import SignIn from "@/components/Forms/SignIn";
+import SignUp from "@/components/Forms/SignUp";
 
 function LandingPage() {
   // useState to handle transition signin page and signup page
@@ -14,12 +14,12 @@ function LandingPage() {
   }
 
   return (
-    <div className="flex h-screen justify-center items-center">
-      <div className="flex flex-col justify-center items-center border-2 border-secondary h-5/6 p-2 w-1/2">
+    <div className="flex h-screen justify-center items-center bg-primary">
+      <div className="md:flex flex-col justify-center items-center border-2 border-secondary mr-2 h-5/6 p-2 w-1/2 hidden">
         <h1 className="text-secondary">Welcome!</h1>
         <h3 className="text-secondary">Sign in to view and manage your songs</h3>
       </div>
-      <div className="flex flex-col justify-center items-center h-5/6 w-1/6">
+      <div className="flex flex-col justify-center items-center h-5/6 mx-auto">
         {signin ? <SignIn /> : <SignUp />}
 
         <div onClick={handleTogglePage}>
