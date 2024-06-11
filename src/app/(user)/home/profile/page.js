@@ -35,7 +35,7 @@ function Profile() {
   ];
 
   return (
-    <section className="max-w-2xl mx-auto">
+    <section className="max-w-2xl">
       <H1>Profile</H1>
       <div className="mt-10">
         <UserIcon userName="Kaleb" userEmail="kakuj424@gmail.com" />

@@ -1,5 +1,5 @@
 "use client";
-import React, { Component } from "react";
+import React, { useState } from "react";
 import H1 from "@/components/Text/H1";
 import LibrarySongCard from "@/components/Cards/LibrarySongCard";
 import LibraryAlbumCard from "@/components/Cards/LibraryAlbumCard";
@@ -80,6 +80,13 @@ function Library() {
       songsAmount: "13",
     },
   ];
+  const [deleteConfirm, setDeleteConfirm] = useState(false);
+
+  const toggleDelete = () => {
+    setDeleteConfirm(true);
+  };
+
+
 
   return (
     <main className="h-full text-teritary">
@@ -95,6 +102,7 @@ function Library() {
             />
           );
         })}
+        
       </div>
 
       {/* Album */}

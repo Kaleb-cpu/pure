@@ -52,8 +52,11 @@ function Home() {
           <H1>Dashboard</H1>
         </div>
         <div className="mb-16 flex flex-col gap-5 mt-10">
+        <div className="text-center">
+
           <H2>Add a Song or an Album</H2>
-          <div className="w-3/4 flex gap-5 mx-auto">
+        </div>
+          <div className="flex justify-center gap-5">
             {Buttons.map((data) => {
               return (
                 <Link className="w-1/4" key={data.id} href={data.href}>
@@ -66,7 +69,7 @@ function Home() {
         <div className="mb-6">
           <H2>Recently added</H2>
         </div>
-        <div className="lg:w-3/4 mx-auto shadow-sm p-1 h-[350px] lg:h-[400px] overflow-scroll">
+        <div className="lg:w-3/4 shadow-sm p-1 h-[350px] lg:h-[400px] overflow-scroll">
           {Dashboard.map((data) => {
             return (
               <DashboardCard
