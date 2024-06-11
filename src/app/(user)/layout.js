@@ -1,6 +1,6 @@
 "use client";
-import SideBar from "@/components/SideBar";
-import Footer from "@/components/Footer";
+import SideBar from "@/components/UI/SideBar";
+import Footer from "@/components/UI/Footer";
 import Logo from "@/components/Logo";
 import { useCurrentRoute } from "@/hooks/useCurrentRoute";
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import SubmitButton from "@/components/Buttons/SubmitButton";
 
-function SignInForm() {
+function LogInForm() {
   const { register, handleSubmit } = useForm();
 
   return (
@@ -11,7 +11,7 @@ function SignInForm() {
       <div className="flex flex-col justify-center items-center mx-auto">
         <Image src="/logo.png" alt="Pure logo" width="50" height="50" />
         <h2 className="mt-2 text-2xl font-bold tracking-tight text-secondary">
-          Sign in to your account
+          Log in to your account
         </h2>
       </div>
 
@@ -73,7 +73,7 @@ function SignInForm() {
           </div>
 
           <div>
-            <SubmitButton type="submit">Sign in</SubmitButton>
+            <SubmitButton type="submit">Log in</SubmitButton>
           </div>
         </form>
       </div>
@@ -81,4 +81,4 @@ function SignInForm() {
   );
 }
 
-export default SignInForm;
+export default LogInForm;

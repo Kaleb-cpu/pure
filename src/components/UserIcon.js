@@ -16,7 +16,7 @@ function userIcon(props) {
           alt="user image"
         ></Image>
         <div>
-        <p className="px-2 font-Inter text-secondary tracking-tight">{props.userName}</p>
+        <p className="px-2 font-Inter lg:text-teritary text-primary font-semibold tracking-tight">{props.userName}</p>
         <p className="px-2 font-Inter text-secondary tracking-tight leading-3">{props.userEmail}</p>
         </div>
       </Link>

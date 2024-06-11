@@ -3,20 +3,19 @@ import { dbConnect, sql } from "../../../utils/dbConnect.js";
 
 export async function POST(request) {
   const body = await request.json;
-  const { Afirst, Alast, Aemail, Ausername, password, confirmPassword } = body;
+  const { Afirst, Alast, Aemail, password, confirmPassword } = body;
 
   if (password !== confirmPassword) {
     NextResponse.json({ message: "Passwords do not match" });
-    return;
+    return console.log("Passwords does not match");
   }
 
   try {
     const query =
-      "INSERT INTO Artist (Afirst, Alast, Ausername, Aemail, password, confirm_password) VALUES (@Afirst, @Alast, @Ausername, @Aemail, @password, @confirm_password)";
+      "INSERT INTO Artist (Afirst, Alast, Aemail, password, confirm_password) VALUES (@Afirst, @Alast, @Ausername, @Aemail, @password, @confirm_password)";
     const params = [
       { name: "Afirst", type: sql.VarChar, value: Afirst },
       { name: "Alast", type: sql.VarChar, value: Alast },
-      { name: "Ausername", type: sql.VarChar, value: Ausername },
       { name: "Aemail", type: sql.VarChar, value: Aemail },
       { name: "password", type: sql.VarChar, value: password },
       { name: "confirm_password", type: sql.VarChar, value: confirmPassword },

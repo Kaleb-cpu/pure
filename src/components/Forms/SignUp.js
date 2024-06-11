@@ -33,15 +33,15 @@ function SignUpForm() {
   };
 
   return (
-    <div className="sm:flex flex-col items-center w-full sm:w-5/6 min-h-screen">
-      <div class="flex flex-col justify-center items-center">
+    <div className="sm:flex flex-col">
+      <div class="flex flex-col justify-center">
         {/* <Image src="/logo-black.png" alt="Pure logo" width="50" height="50" /> */}
         <h2 className="mt-2 text-2xl font-bold tracking-tight text-secondary">
           Create an account
         </h2>
       </div>
 
-      <div className="mt-10 sm:mx-auto sm:w-full">
+      <div className="mt-10">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="space-y-4"
@@ -59,7 +59,7 @@ function SignUpForm() {
                 {...register("Afirst", {
                   required: "Please enter your first name",
                   minLength: {
-                    value: 2,
+                    value: 3,
                     message: "Please enter a valid first name",
                   },
                 })}
@@ -126,30 +126,6 @@ function SignUpForm() {
               />
               {errors.email && (
                 <div className="text-red-500">{errors.email.message}</div>
-              )}
-            </div>
-          </div>
-
-          <div>
-            <label
-              htmlFor="username"
-              className="block text-sm font-medium leading-6 text-secondary"
-            >
-              Username
-            </label>
-            <div className="mt-2">
-              <input
-                {...register("Ausername", {
-                  required: "Please enter your username",
-                  message: "Please enter a valid username",
-                })}
-                
-                type="text"
-                autocomplete="username"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-fourth sm:text-sm sm:leading-6"
-              />
-              {errors.username && (
-                <div className="text-red-500">{errors.username.message}</div>
               )}
             </div>
           </div>
