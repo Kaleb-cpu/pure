@@ -3,82 +3,45 @@ import React, { useState } from "react";
 import H1 from "@/components/Text/H1";
 import LibrarySongCard from "@/components/Cards/LibrarySongCard";
 import LibraryAlbumCard from "@/components/Cards/LibraryAlbumCard";
+import H2 from "@/components/Text/H2";
+import SubmitButton from "@/components/Buttons/SubmitButton";
+import Link from "next/link";
 
 function Library() {
   const librarySong = [
     {
       id: "1",
-      artistName: "Biniam Berhe",
+      artistName: "Lorem Ipsum",
       songName: "ካብ እግርኻ",
-      imageSrc: "/biniamSong.jpg",
+      imageSrc: "https://images.pexels.com/photos/24847577/pexels-photo-24847577/free-photo-of-a-wooden-walkway-in-the-fog-with-flowers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       length: "5",
     },
     {
       id: "2",
-      artistName: "Efrem Rezene",
+      artistName: "Lorem Ipsum",
       songName: "ምንጪ ጽቡቅ ፍረይ",
-      imageSrc: "/efremSong.jpg",
+      imageSrc: "https://images.pexels.com/photos/17591300/pexels-photo-17591300/free-photo-of-entrance-decorated-with-potted-plants.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       length: "3",
     },
     {
       id: "3",
-      artistName: "Goytom Gebreyonas",
+      artistName: "Lorem Ipsum",
       songName: "ፍትወይ",
-      imageSrc: "/goytomSong.jpg",
+      imageSrc: "https://images.pexels.com/photos/25244962/pexels-photo-25244962/free-photo-of-the-temple-is-made-of-wood-and-has-a-red-roof.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       length: "7",
     },
     {
       id: "4",
-      artistName: "Kiflu Daygnew",
+      artistName: "Lorem Ipsum",
       songName: "ረዳኢየይ",
-      imageSrc: "/kifluSong.jpg",
+      imageSrc: "https://images.pexels.com/photos/25675332/pexels-photo-25675332/free-photo-of-hiking-in-cappadocia.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
       length: "6",
     },
-    {
-      id: "5",
-      artistName: "Pastor Melake",
-      songName: "ከማኻ ዝበለ የለን",
-      imageSrc: "/meronSong.jpg",
-      length: "8",
-    },
-    {
-      id: "6",
-      artistName: "Petros Berhe",
-      songName: "ኩሉ ሰናይ",
-      imageSrc: "/petrosAlbum.jpg",
-      length: "4",
-    },
+    
   ];
 
   const libraryAlbum = [
-    {
-      id: "1",
-      artistName: "Filmon Mesel",
-      albumName: "መንፈስ ቅዱስ",
-      imageSrc: "/filmonAlbum.jpg",
-      songsAmount: "10",
-    },
-    {
-      id: "2",
-      artistName: "Petros Berhe",
-      albumName: "ኩሉ ሰናይ",
-      imageSrc: "/petrosAlbum.jpg",
-      songsAmount: "12",
-    },
-    {
-      id: "3",
-      artistName: "Kokob",
-      albumName: "ሰናይ ኢኻ ኣምላኸይ",
-      imageSrc: "/kokob.jpg",
-      songsAmount: "9",
-    },
-    {
-      id: "4",
-      artistName: "Yemane Habte",
-      albumName: "ብፍቅርኻ ዓብየ",
-      imageSrc: "/yemaneHabte.jpg",
-      songsAmount: "13",
-    },
+    
   ];
   const [deleteConfirm, setDeleteConfirm] = useState(false);
 
@@ -97,7 +60,7 @@ function Library() {
             <LibrarySongCard
               key={data.id}
               artistName={data.artistName}
-              songName={data.songName}
+              // songName={data.songName}
               imageSrc={data.imageSrc}
             />
           );
@@ -118,9 +81,24 @@ function Library() {
               albumName={data.albumName}
               songsAmount={`album \u00B7 ${data.songsAmount} songs`}
               imageSrc={data.imageSrc}
-            />
+            >
+            </LibraryAlbumCard>
           );
         })}
+        <div className="w-1/4 flex mt-8 flex-col">
+        <H2>No albums to show here...</H2>
+        
+          
+            <Link className="w-1/2 mt-5" href="/home/albums">
+            <SubmitButton>
+              Add an Album
+              </SubmitButton>
+            </Link>
+        
+        
+          
+        
+      </div>
       </div>
     </main>
   );

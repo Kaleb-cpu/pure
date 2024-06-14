@@ -10,7 +10,7 @@ function userIcon(props) {
       >
         <Image
           className="rounded-full h-12 object-cover"
-          src="/user.jpg"
+          src="https://images.pexels.com/photos/25020012/pexels-photo-25020012/free-photo-of-close-up-of-a-woman-leaning-against-a-rail.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           width="50"
           height="50"
           alt="user image"

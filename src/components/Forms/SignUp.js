@@ -7,9 +7,12 @@ function SignUpForm() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm();
 
+  console.log(isSubmitting)
+  
+  
   // onSubmit function that handles onSubmit using handleSubmit function
   const onSubmit = async (data) => {
     try {
@@ -22,7 +25,7 @@ function SignUpForm() {
       });
 
       if (response.ok){
-        window.location.href = '/home';
+        window.location.href = '/';
       }
       else {
         console.log("Form submission failed")
@@ -31,6 +34,8 @@ function SignUpForm() {
       console.log('Error submitting form', error);
     }
   };
+
+
 
   return (
     <div className="sm:flex flex-col">
@@ -180,7 +185,7 @@ function SignUpForm() {
           </div>
 
           <div>
-          <SubmitButton type="submit">Sign up</SubmitButton>
+          <SubmitButton isSubmitting={isSubmitting}type="submit">Sign up</SubmitButton>
           </div>
         </form>
       </div>

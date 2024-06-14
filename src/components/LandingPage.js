@@ -1,5 +1,5 @@
 "use client"; // This is a client component 👈🏽
-
+import Image from "next/image";
 import { React, useState } from "react";
 import LogIn from "@/components/Forms/SignIn";
 import SignUp from "@/components/Forms/SignUp";
@@ -15,9 +15,18 @@ function LandingPage() {
 
   return (
     <div className="flex h-screen justify-center items-center bg-primary">
-      <div className="md:flex flex-col justify-center items-center border-2 border-secondary mr-2 h-5/6 p-2 w-1/2 hidden">
+      <div className="md:flex flex-row justify-center items-center mr-2 h-5/6 p-2 w-1/2 hidden">
+      <Image 
+        src="/landingPage.gif"
+        width={1500}
+        height={1500}
+        alt="Landing page photo"
+      ></Image>
+      {/* <div>
+        
         <h1 className="text-secondary">Welcome!</h1>
         <h3 className="text-secondary">Log in to view and manage your songs</h3>
+      </div> */}
       </div>
       <div className="flex flex-col h-5/6 justify-center">
         {login ? <LogIn /> : <SignUp />}

@@ -4,7 +4,13 @@ import { useForm } from "react-hook-form";
 import SubmitButton from "@/components/Buttons/SubmitButton";
 
 function LogInForm() {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm();
+
+  console.log(isSubmitting)
 
   return (
     <div className="flex flex-col items-center w-screen sm:w-full">
@@ -72,8 +78,11 @@ function LogInForm() {
             </div>
           </div>
 
-          <div>
-            <SubmitButton type="submit">Log in</SubmitButton>
+          <div> 
+          <SubmitButton type="submit" isSubmitting={isSubmitting} isLogin>
+            
+  Sign in
+</SubmitButton>
           </div>
         </form>
       </div>

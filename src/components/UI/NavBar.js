@@ -8,7 +8,7 @@ function NavBar() {
     <main>
       <div className="sm:flex justify-between w-5/6 sm:items-center sm:m-auto mx-3">
         <div className="my-2">
-          <Link href="/home/dashboard">
+          <Link href="/home">
             <Image
               src="/pure-worship-transparent.png"
               width="200"
@@ -19,7 +19,7 @@ function NavBar() {
         </div>
 
         <div className="flex flex-row gap-3 text-secondary text-xl font-Inter">
-          <Link className="self-center" href="/home/dashboard">Home</Link>
+          <Link className="self-center" href="/home">Home</Link>
           <Link className="self-center" href="/">Log out</Link>
           <Link href="/">
             <Image

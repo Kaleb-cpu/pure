@@ -10,32 +10,26 @@ function Home() {
   const Dashboard = [
     {
       id: "1",
-      name: "Yonatan and Sosuna",
+      name: "Lorem Ipsum",
       type: "Album",
       albumYear: "2022",
-      imageSrc: "/yoniSosi.jpg",
+      imageSrc: "https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g",
     },
     {
       id: "2",
-      name: "Efrem Rezene",
+      name: "Lorem Ipsum",
       type: "Song",
       albumYear: "2021",
-      imageSrc: "/efremRezene.jpg",
+      imageSrc: "https://images.pexels.com/photos/1000366/pexels-photo-1000366.jpeg",
     },
     {
       id: "3",
-      name: "Kokob",
+      name: "Lorem Ipsum",
       type: "Song",
       albumYear: "2023",
-      imageSrc: "/kokob.jpg",
+      imageSrc: "https://images.pexels.com/photos/25649809/pexels-photo-25649809/free-photo-of-colors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
-    {
-      id: "4",
-      name: "Yemane Habte",
-      type: "Song",
-      albumYear: "2024",
-      imageSrc: "/yemaneHabte.jpg",
-    },
+
   ];
 
   const Buttons = [

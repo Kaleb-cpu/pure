@@ -38,7 +38,7 @@ function Profile() {
     <section className="max-w-2xl">
       <H1>Profile</H1>
       <div className="mt-10">
-        <UserIcon userName="Kaleb" userEmail="kakuj424@gmail.com" />
+        <UserIcon userName="Lorem Ipsum" userEmail="lorem@gmail.com" />
       </div>
       <div className="mt-12">
         <H2>Profile Photo</H2>
